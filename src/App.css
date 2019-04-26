@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: hidden;
+  font-family: 'Actor', sans-serif;
+}
+
+h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.distanceDisplayHeading {
+  background: linear-gradient(to top right, #cc6600 2%, #800000 85%);
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Overriding google's stylesheet */
+.gm-iv-address {
+  display: none !important;
+}
+
+.gm-svpc {
+  display: none !important;
+}
+
+.map-opacity>div {
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+.map-opacity>div:hover {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+div [title='Show street map'], div [title='Show satellite imagery'] {
+  display: none !important;
+}
+
+#submitGuess {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+  background-color: red;
+  color: white;
+  border: none;
+  transition: 0.1s;
+  font-size: 2em;
+}
+
+#submitGuess:hover {
+  background-color: darkred;
+}
+
+#submitGuess:active {
+  background-color: orange;
+}
+
+.disabled {
+  color: grey !important;
+  background-color: darkgray !important;
+}
+
+.styles_modal__gNwvD {
+  width: 50%;
+  border-radius: 5px;
+  padding: 2em;
+  text-align: center;
+}
+
+.primary-highlight {
+  color: greenyellow;
+}
+
+#loadingIcon {
+  animation: logoRotate 5s ease-out infinite;
+}
+
+.primaryBtn {
+  background-color: orange;
+  /* border: none; */
+  color: white;
+  padding: 1em;
+  border-radius: 2px;
+}
+
+.primaryBtn:hover {
+  background-color: darkgoldenrod;
+}
+
+.primaryBtn:active {
+  background-color: brown;
+}
+
+/* Results Table inside Modal */
+table {
+  text-align: left;
+  margin: 1em;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.loadingIconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.loadingIcon {
+  margin: auto 0;
+  text-align: center;
+}
+
+/* Animation for loading screen */
+@keyframes logoRotate {
+  0% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(720deg);
+  }
+  80% {
+    transform: rotateY(90deg);
+  }
+  85% {
+    transform: rotateY(30deg);
+  }
+  100% {
+    transform: rotateY(90deg);
+  }
+}
