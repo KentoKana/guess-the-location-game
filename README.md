@@ -1,4 +1,4 @@
-# Gues The Location 
+# Guess The Location 
 - Deployed on: 
 http://guess-the-location.herokuapp.com/
 
