@@ -19,6 +19,7 @@ export class MapContainer extends Component {
   }
 
   //Function to calculate distance between two latitude and longitude points.
+  //https://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula
   getDistanceFromLatLonInKm = () => {
     var R = 6371; // Radius of the earth in km
     var dLat = this.deg2rad(this.state.currentPosition[0].position.lat - this.props.coord.lat);  // deg2rad below
