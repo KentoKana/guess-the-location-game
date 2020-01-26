@@ -44,10 +44,10 @@ class App extends Component {
   //https://stackoverflow.com/questions/13236312/how-to-detect-if-google-streetview-is-available-in-an-address-coordinates
   //Obtain the status of whether or not street view exists for a particular randomly selected city.
   getCoordWithStreetView = (latLng) => {
-    axios.get(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/streetview/metadata?key=${process.env.REACT_APP_GAPI_KEY}&location=${latLng.lat},${latLng.lon}`)
+    axios.get(`https://maps.googleapis.com/maps/api/streetview/metadata?key=AIzaSyBGPikSEe4MZL4lAf02oKw9t49Z3iBEcyU&location=${latLng.lat},${latLng.lon}`)
       .then(res => {
-        // console.log(latLng);
-        // console.log(res.data.status);
+        console.log(latLng);
+        console.log(res.data.status);
         let newLatLng = {};
         if (res.data.status === "OK") {
           //if street view is available, then set latLng state to that latLng.

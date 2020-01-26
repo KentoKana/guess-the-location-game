@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import Streetview from './Streetview';
-const googleMapsApiKey = process.env.REACT_APP_GAPI_KEY;
+const googleMapsApiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 export class MapContainer extends Component {
   constructor(props) {
